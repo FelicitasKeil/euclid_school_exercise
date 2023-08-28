@@ -14,4 +14,13 @@ def critical_density(redshift, cosmo_dict):
     H_z_si = hubble(redshift, cosmo_dict) * 1e3 / Mpc
 
     return (3.0 * H_z_si**2) / (8.0 * np.pi * G)
+
+fid_cosmo = {
+        "H0": 70,
+        "omega_m_0": 0.3,
+        "omega_k_0": 0.0,
+        "omega_lambda_0": 0.7,
+        }
+crit_dens = critical_density(1.0, fid_cosmo)
+print(crit_dens)
 # %%
