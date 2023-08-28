@@ -45,6 +45,6 @@ fid_cosmo = {
         "omega_k_0": 0.0,
         "omega_lambda_0": 0.7,
         }
-crit_dens = critical_density(1.0, fid_cosmo)
+crit_dens = critical_density(0.0, fid_cosmo)
 print(crit_dens)
 # %%
