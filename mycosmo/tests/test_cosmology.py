@@ -1,7 +1,7 @@
 #%%
 import numpy as np
 import numpy.testing as npt
-import pytest
+#import pytest
 
 from mycosmo.cosmology import hubble, critical_density
 
@@ -16,7 +16,7 @@ class TestCosmology:
     H_tolerance = 0.01
     z_range = np.array([0.0, 0.5, 1.0])
     H_expect = np.array([70, 91.60, 123.24])
-    cd_expect = np.array/[9.2e-27, 1.6e-26, 2.9e-26]
+    cd_expect = np.array([9.2e-27, 1.6e-26, 2.9e-26])
     cd_tolerance = 1e-26
 
     def test_hubble(self):
@@ -41,7 +41,7 @@ class TestCosmology:
             err_msg=(
                 "The critical density of z differs from expected values by more than "
                 f"{self.cd_tolerance} decimal places."
-            )
+            ),
         )
 
 # %%
