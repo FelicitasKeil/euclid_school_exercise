@@ -4,7 +4,7 @@ This module implements various cosmology routines.
 
 """
 import numpy as np
-from mycosmo.constants import Mpc, G
+from .constants import Mpc, G
 
 def hubble(redshift, cosmo_dict):
     """Hubble Parameter.
